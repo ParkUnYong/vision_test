@@ -22,8 +22,9 @@ data = {
 res = requests.post('https://koreacentral.api.cognitive.microsoft.com/vision/v1.0/analyze',
                         params= params, headers=headers, json =data)
 
-
 res_dic = json.loads(res.text)
+
+
 
 #print(res_dic['description'])  디스크립션만
 #print(res_dic['description']['captions']) 디스크립션안에 캡션만
